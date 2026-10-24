@@ -3,16 +3,12 @@ import wx
 import mysql.connector
 from mysql.connector import Error
 
-# Configurações de Conexão com o MySQL
 DB_CONFIG = {
-    "host": os.environ.get("DB_HOST", "localhost"),
-    "user": os.environ["DB_USER"],
-    "password": os.environ["DB_PASSWORD"],
+    'host': 'localhost',
+    'user': 'root',
+    'password': 'Samuka@028' 
 }
 DB_NAME = 'sistema_db'
-
-
-
 
 def inicializar_banco():
     """Cria o banco de dados, a tabela de usuários e insere o usuário inicial se não existirem."""
