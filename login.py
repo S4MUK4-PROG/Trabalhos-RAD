@@ -9,8 +9,9 @@ DB_CONFIG = {
     "user": os.environ["DB_USER"],
     "password": os.environ["DB_PASSWORD"],
 }
-
 DB_NAME = 'sistema_db'
+
+
 
 
 def inicializar_banco():
